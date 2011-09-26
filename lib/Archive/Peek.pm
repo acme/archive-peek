@@ -3,7 +3,7 @@ use Moose;
 use Archive::Peek::Tar;
 use Archive::Peek::Zip;
 use MooseX::Types::Path::Class qw( File );
-our $VERSION = '0.34';
+our $VERSION = '0.35';
 
 has 'filename' => (
     is       => 'ro',
