@@ -18,7 +18,7 @@ sub BUILD {
     my $basename = $filename->basename;
     if ( $basename =~ /\.zip$/i ) {
         bless $self, 'Archive::Peek::Zip';
-    } elsif ( $basename =~ /(\.tar|\.tar\.gz|\.tgz)$/i ) {
+    } elsif ( $basename =~ /(\.tar|\.tar\.gz|\.tgz|\.bz2|\.bzip2)$/i ) {
         bless $self, 'Archive::Peek::Tar';
     } else {
         confess("Failed to open $filename");
@@ -43,7 +43,8 @@ Archive::Peek - Peek into archives without extracting them
 =head1 DESCRIPTION
 
 This module lets you peek into archives without extracting them.
-It currently supports tar files and zip files.
+It currently supports tar files and zip files. To support Bzip2-
+compressed files, you should install IO::Uncompress::Bunzip2.
 
 =head1 METHODS
 

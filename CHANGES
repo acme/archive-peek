@@ -1,6 +1,9 @@
 Revision history for Perl module Archive::Peek:
 
-0.34 
+0.35
+     - add support for .tar.bz2 (as suggested by Fabrizio Regalli)
+
+0.34 10 Sep 2008 17:38:14 GMT
      - put human-readable license in the documentation
      - add an abstract to the Makefile.PL
 

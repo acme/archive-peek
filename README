@@ -6,10 +6,11 @@ SYNOPSIS
       my $peek = Archive::Peek->new( filename => 'archive.tgz' );
       my @files = $peek->files();
       my $contents = $peek->file('README.txt')
-  
+
 DESCRIPTION
     This module lets you peek into archives without extracting them. It
-    currently supports tar files and zip files.
+    currently supports tar files and zip files. To support Bzip2- compressed
+    files, you should install IO::Uncompress::Bunzip2.
 
 METHODS
   new
@@ -33,6 +34,7 @@ AUTHOR
 COPYRIGHT
     Copyright (C) 2008, Leon Brocard.
 
+LICENSE
     This module is free software; you can redistribute it or modify it under
     the same terms as Perl itself.
 
