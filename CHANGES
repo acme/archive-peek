@@ -1,5 +1,8 @@
 Revision history for Perl module Archive::Peek:
 
+«»
+     - ported from Moose to Moo and Type::Tiny
+
 0.35 Mon Sep 26 20:21:30 BST 2011
      - add support for .tar.bz2 (as suggested by Fabrizio Regalli)
 
