@@ -1,8 +1,8 @@
 package Archive::Peek;
-use Moose;
+use Moo;
 use Archive::Peek::Tar;
 use Archive::Peek::Zip;
-use MooseX::Types::Path::Class qw( File );
+use Types::Path::Tiny qw( File );
 our $VERSION = '0.35';
 
 has 'filename' => (
