@@ -1,5 +1,6 @@
 package Archive::Peek;
 use Moo;
+use Carp qw(confess);
 use Archive::Peek::Tar;
 use Archive::Peek::Zip;
 use Types::Path::Tiny qw( File );

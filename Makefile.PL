@@ -13,6 +13,7 @@ WriteMakefile(
         'Archive::Zip'               => '0',
         'Moo'                        => '0',
         'Types::Path::Tiny'          => '0',
+        'Carp'                       => '0',
     },
     TEST_REQUIRES => {
         'Test::More'                 => '0',
