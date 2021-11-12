@@ -14,6 +14,11 @@ WriteMakefile(
         'Moose'                      => '0',
         'MooseX::Types::Path::Class' => '0',
         'Test::More'                 => '0',
-    }
+    },
+    META_MERGE   => {
+        resources => {
+            repository => 'https://github.com/acme/archive-peek',
+        },
+    },
 );
 
