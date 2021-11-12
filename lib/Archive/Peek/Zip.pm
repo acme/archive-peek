@@ -1,5 +1,5 @@
 package Archive::Peek::Zip;
-use Moose;
+use Moo;
 use Archive::Zip qw(AZ_OK);
 use Archive::Zip::MemberRead;
 extends 'Archive::Peek';
