@@ -18,6 +18,7 @@ WriteMakefile(
         'Test::More'                 => '0',
     },
     META_MERGE   => {
+        "meta-spec" => { version => 2 },
         resources => {
             repository => 'https://github.com/acme/archive-peek',
         },
