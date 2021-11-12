@@ -13,11 +13,20 @@ WriteMakefile(
         'Archive::Zip'               => '0',
         'Moo'                        => '0',
         'Types::Path::Tiny'          => '0',
+    },
+    TEST_REQUIRES => {
         'Test::More'                 => '0',
     },
     META_MERGE   => {
         resources => {
             repository => 'https://github.com/acme/archive-peek',
+        },
+        prereqs => {
+            develop => {
+                requires => {
+                    'Test::Pod'      => '1.14',
+                },
+            },
         },
     },
 );
