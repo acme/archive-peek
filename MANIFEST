@@ -11,4 +11,3 @@ t/archive.tgz
 t/archive.zip
 t/pod.t
 t/simple.t
-META.yml                                 Module meta-data (added by MakeMaker)
