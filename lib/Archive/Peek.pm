@@ -4,7 +4,7 @@ use Carp qw(confess);
 use Archive::Peek::Tar;
 use Archive::Peek::Zip;
 use Types::Path::Tiny qw( File );
-our $VERSION = '0.36';
+our $VERSION = '0.37';
 
 has 'filename' => (
     is       => 'ro',
