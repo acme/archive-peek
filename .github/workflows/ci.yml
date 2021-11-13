@@ -88,7 +88,7 @@ jobs:
 
       - name: Install develop deps
         run: |
-          cpanm --notest Test::Pod
+          cpanm --notest --installdeps --with-develop dist.tar.gz
 
       - name: Run tests
         run:
