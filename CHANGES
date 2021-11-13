@@ -1,5 +1,7 @@
 Revision history for Perl module Archive::Peek:
 
+     - update repository metadata (Zakariyya Mughal)
+
 0.36 Fri Nov 12 21:40:27 EST 2021
      - add repository metadata (thanks David Steinbrunner)
      - port from Moose to Moo and Type::Tiny (Zakariyya Mughal)
