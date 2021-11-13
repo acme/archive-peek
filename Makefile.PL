@@ -13,9 +13,11 @@ WriteMakefile(
         'Archive::Zip'               => '0',
         'Moo'                        => '0',
         'Types::Path::Tiny'          => '0',
+        'Carp'                       => '0',
     },
     TEST_REQUIRES => {
         'Test::More'                 => '0',
+        'File::Temp'                 => '0',
     },
     META_MERGE   => {
         "meta-spec" => { version => 2 },

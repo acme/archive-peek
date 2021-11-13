@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
-          cpanm --notest --with-recommends --with-suggests Test::WriteVariants Config::AutoConf Carp inc::latest
+          cpanm --notest --with-recommends --with-suggests ExtUtils::MakeMaker
       - name: Make distribution
         shell: bash
         run: |
@@ -88,7 +88,7 @@ jobs:
 
       - name: Install develop deps
         run: |
-          cpanm --notest Test::Pod
+          cpanm --notest --installdeps --with-develop dist.tar.gz
 
       - name: Run tests
         run:
